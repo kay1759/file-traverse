@@ -4,17 +4,21 @@ This is a Clojure library for traverse a file path recursively, and apply a func
 
 ## Installation
 
-[![Clojars Project](https://img.shields.io/clojars/v/kay1759/file-traverse.svg)](https://clojars.org/kay1759/file-traverse)
+[![Clojars Project](https://img.shields.io/clojars/v/org.clojars.kay1759/file-traverse.svg)](https://clojars.org/org.clojars.kay1759/file-traverse)
 
 ## Usage
 ### Usage:
 ```
-(require '[kay1759.file-traverse/core :as trv])
+(require '[file-traverse.core :as trv])
 
 (trv/traverse <base directory> <function> <filter for file: optional> <filter for direcotry: optional>)
 ```
 
 ### Example:
+This example is updating all html files under a directory.
+
+This is a typical example, though it has side effects causes it uses 'spit'.
+
 ```
 (trv/traverse "/src/templates"
     #(spit %
@@ -28,7 +32,6 @@ This is a Clojure library for traverse a file path recursively, and apply a func
 ```
 lein test
 ```
-
 ## Licence:
 
 [MIT]
