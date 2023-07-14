@@ -2,6 +2,8 @@
 
 This is a Clojure library for traverse a file path recursively, and apply a function.
 
+This program expects _**side-effect**_ behavior.
+
 ## Installation
 
 [![Clojars Project](https://img.shields.io/clojars/v/org.clojars.kay1759/file-traverse.svg)](https://clojars.org/org.clojars.kay1759/file-traverse)
